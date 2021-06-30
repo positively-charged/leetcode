@@ -11,7 +11,7 @@ class Solution:
 
 assert Solution().removeElement(
     nums := [ 3, 2, 2, 3], 3 ) == 2 and \
-    nums == [ 2, 2 ]
+    sorted( nums ) == [ 2, 2 ]
 assert Solution().removeElement(
     nums := [ 0, 1, 2, 2, 3, 0, 4, 2], 2 ) == 5 and \
-    nums == [ 0, 1, 4, 0, 3 ]
+    sorted( nums ) == [ 0, 0, 1, 3, 4 ]
